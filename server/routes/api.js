@@ -99,6 +99,8 @@ router.get("/products", (req, res, next) => {
 });
 
 router.post("/products", (req, res, next) => {
+  console.log("!!!!!!!!!!!!!I'm in the post!!!!!!!!!!!!!!")
+  console.log(req)
   const { title, price, quantity } = req.body;
   Product.create({ title, price, quantity })
     .then((product) => res.json(product))
