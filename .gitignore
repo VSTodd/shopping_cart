@@ -1,3 +1,3 @@
-node_modules/
-client/.parcel-cacheparcel-cache/
+**/client/node_modules/
+**/client/.parcel-cache/
 .env
