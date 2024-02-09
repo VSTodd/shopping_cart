@@ -24,6 +24,7 @@ const AddItem = ({ onSubmit }) => {
     setName("");
     setPrice("");
     setQuantity("");
+    setClass("add-form");
   };
 
   return (
@@ -38,6 +39,7 @@ const AddItem = ({ onSubmit }) => {
             onChange={(e) => setName(e.target.value)}
             id="product-name"
             name="product-name"
+            value={name}
             required
           />
         </div>
@@ -50,6 +52,7 @@ const AddItem = ({ onSubmit }) => {
             name="product-price"
             min="0"
             step="0.01"
+            value={price}
             required
           />
         </div>
@@ -61,6 +64,7 @@ const AddItem = ({ onSubmit }) => {
             id="product-quantity"
             name="product-quantity"
             min="0"
+            value={quantity}
             required
           />
         </div>

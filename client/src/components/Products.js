@@ -1,12 +1,12 @@
 import Product from "./Product";
 
-const Products = ({ products }) => {
+const Products = ({ products, onUpdate, onDelete }) => {
   return (
     <div class="product-listing">
       <h2>Products</h2>
       <ul class="product-list">
       {products.map((product) => (
-        <Product key={product.id} product={product} />
+        <Product key={product._id} product={product} onUpdate={onUpdate} onDelete={onDelete} />
       ))}
       </ul>
     </div>
