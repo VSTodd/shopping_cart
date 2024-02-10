@@ -9,8 +9,11 @@
 - Refresh add product form when product added
 - Edit Product
 - Delete Product
-
-## To Do
 - Create HTML outline for shopping cart
 - View all cart items
+- Checkout button clears cart
 - Add Product to Cart
+
+## To Do
+- rename undescriptive functions (handleClick, buttonClicked, AddProduct, EditProduct)
+- Add a wrapper about AddItem and Product???
